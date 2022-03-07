@@ -10,7 +10,7 @@ function App() {
   const overNavFunction = () =>{
     setshowNav(prev => !prev)
     const menu =  document.getElementById('navPlug');
-    console.log(showNav)
+    
     if( showNav == false){
       menu.style.display= 'block';
     }
@@ -19,7 +19,6 @@ function App() {
   }
   const contrast = () =>{
     setConst(prev => !prev)
-    console.log(showConst)
     if(showConst == true){
       document.querySelector('.App-header').classList.add('active');      
     }else{
@@ -36,6 +35,7 @@ function App() {
             <li><a href="#">A+|A-</a></li>
             <li><a href="#">Highlight</a></li>
             <li><a href="#">Spacing</a></li>
+            
           </nav>
         </header>
         <div>
@@ -47,5 +47,6 @@ function App() {
     </div>   
   );
 }
+
 
 export default App;
